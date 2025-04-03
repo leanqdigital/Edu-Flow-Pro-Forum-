@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
   const REGISTERD_COURSES_QUERY = `
-    query calcRegisteredMembersRegisteredCoursesMany($id: PriestessContactID) {
+    query calcRegisteredMembersRegisteredCoursesMany($id: EduflowproContactID) {
       calcRegisteredMembersRegisteredCoursesMany(
         query: [{ where: { Registered_Member: [{ where: { id: $id } }] } }]
       ) {
@@ -53,9 +53,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const SUBSCRIPTION_QUERY = `
   subscription subscribeToCalcAnnouncements(
     $created_at: TimestampSecondsScalar,
-    $related_course_id: PriestessCourseID,
-    $author_id: PriestessContactID,
-    $id: PriestessContactID,
+    $related_course_id: EduflowproCourseID,
+    $author_id: EduflowproContactID,
+    $id: EduflowproContactID,
     $limit: IntScalar,
     $offset: IntScalar
   ) {
