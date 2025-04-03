@@ -40,7 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
     })
       .then((response) => response.json())
       .then((data) => {
-        const courses = data.data.calcRegisteredMembersRegisteredCoursesMany || [];
+        // const courses = data.data.calcRegisteredMembersRegisteredCoursesMany || [];
+        const  courses = [28];        
         console.log('Registered courses:', courses);
         return courses.map((course) => Number(course.Registered_Course_ID));
       })
