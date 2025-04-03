@@ -138,12 +138,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-window.addEventListener("load", function () {
-  const loader = document.getElementById("loader");
-  setTimeout(() => {
-    loader.classList.add("fade-out");
-  }, 500);
-});
+// window.addEventListener("load", function () {
+//   const loader = document.getElementById("loader");
+//   setTimeout(() => {
+//     loader.classList.add("fade-out");
+//   }, 500);
+// });
 
 document.addEventListener("click", (event) => {
   if (event.target.closest(".bellIcon")) {
