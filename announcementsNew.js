@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
     return;
   }
 
-  const API_KEY = "U6F6ofQc_Oes9BimgiEs5";
-  const WS_ENDPOINT = `wss://priestess.vitalstats.app/api/v1/graphql?apiKey=${API_KEY}`;
-  const HTTP_ENDPOINT = `https://priestess.vitalstats.app/api/v1/graphql`;
+  const API_KEY = "CpoyxZCcjURklXACKfifF";
+  const WS_ENDPOINT = `wss://eduflowpro.vitalstats.app/api/v1/graphql?apiKey=${API_KEY}`;
+  const HTTP_ENDPOINT = `https://eduflowpro.vitalstats.app/api/v1/graphql`;
   let createdAt = CONFIG.api.dateAdded;
   const LOGGED_IN_CONTACT_ID = CONFIG.api.userId;
   let courseIdToCheck = CONFIG.api.currentCourseId;
