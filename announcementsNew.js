@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
     subscribeToCalcAnnouncements(
       query: [
         { where: { created_at: $created_at, _OPERATOR_: gt } },
-        ${fetchUserDate}
+       
         {
           andWhereGroup: [
             {
